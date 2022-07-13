@@ -83,9 +83,9 @@ export default class PathfindingVisualizer extends Component {
       <>
       <Stack direction="row" spacing={2}>
         <Button variant='outlined' onClick={() => this.visualizeDijkstra()}>
-          Visualize Dijkstra's Algorithm
+          Visualize Dijkstra
         </Button>
-        <div style={{fontSize:'19px'}}><strong>Note:</strong> <span style={{color:'green'}}>Green</span> color denotes the Starting point and the <span style={{color:'red'}}>Red</span> color denotes the Ending point of the grid.</div>
+        <div style={{fontSize:'15px'}}><strong>Note:</strong> <span style={{color:'green'}}>Green</span> color denotes the Starting point and the <span style={{color:'red'}}>Red</span> color denotes the Ending point of the grid.</div>
       </Stack>  
         <div className="grid">
           {grid.map((row, rowIdx) => {

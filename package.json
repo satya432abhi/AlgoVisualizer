@@ -1,6 +1,6 @@
 {
   "name": "dijkastra-visualizer",
-  "homepage": "https://satya432abhi.github.io/about/",
+  "homepage": "https://satya432abhi.github.io/algovisualizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

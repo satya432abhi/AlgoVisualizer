@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <div>
-        <h1 className='heading'>Dijkastra's Visualizer</h1>
+        <h3 className='heading'>Dijkstra's Visualizer</h3>
       </div>
 
       <Router>

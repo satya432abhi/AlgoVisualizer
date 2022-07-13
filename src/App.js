@@ -21,7 +21,7 @@ function App() {
            <div className="App">
              <Navbar/>
            <Routes>
-                 <Route exact path='/' element={< About />}></Route>
+                 <Route exact path='/algovisualizer' element={< About />}></Route>
                  <Route exact path='/visualize' element={< Visualizer />}></Route>
            </Routes>
            </div>

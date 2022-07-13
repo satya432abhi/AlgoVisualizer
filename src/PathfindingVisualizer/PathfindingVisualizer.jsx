@@ -6,8 +6,8 @@ import Stack from '@mui/material/Stack';
 import './PathfindingVisualizer.css';
 import { Typography } from '@mui/material';
 
-const START_NODE_ROW = 10;
-const START_NODE_COL = 15;
+const START_NODE_ROW = 8;
+const START_NODE_COL = 11;
 const FINISH_NODE_ROW = 10;
 const FINISH_NODE_COL = 35;
 
@@ -85,7 +85,7 @@ export default class PathfindingVisualizer extends Component {
         <Button variant='outlined' onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </Button>
-        <div style={{fontSize:'20px'}}><strong>Note:</strong> <span style={{color:'green'}}>Green</span> color denotes the Starting point and the <span style={{color:'red'}}>Red</span> color denotes the Ending point of the grid.</div>
+        <div style={{fontSize:'19px'}}><strong>Note:</strong> <span style={{color:'green'}}>Green</span> color denotes the Starting point and the <span style={{color:'red'}}>Red</span> color denotes the Ending point of the grid.</div>
       </Stack>  
         <div className="grid">
           {grid.map((row, rowIdx) => {
@@ -124,9 +124,9 @@ export default class PathfindingVisualizer extends Component {
 const getInitialGrid = () => {
   // console.log('called');
   const grid = [];
-  for (let row = 0; row < 20; row++) {
+  for (let row = 0; row < 18; row++) {
     const currentRow = [];
-    for (let col = 0; col < 50; col++) {
+    for (let col = 0; col < 40; col++) {
       currentRow.push(createNode(col, row));
     }
     grid.push(currentRow);
